@@ -1,0 +1,43 @@
+/* Header and its elements style */
+.header {
+  background-color: #39a3db;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form label {
+  color: white;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form input[type="search"] {
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+.form i {
+  margin: 0 0 0 -20px;
+}
