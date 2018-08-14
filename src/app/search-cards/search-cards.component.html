@@ -1,19 +1,19 @@
-<div *ngIf="weathers" class="card-container">
-  <div class="card" *ngFor="let weather of weathers">
-    <div class="card-temp">
-      <div>{{weather.temp | number:'1.0-1'}}°</div>
+<div *ngIf="cities" class="card-container">
+  <div class="card col-md-4" *ngFor="let city of cities">
+    <div class="card-temp col-md-4">
+      <div>{{city.main.temp | number:'1.0-1'}}°C</div>
     </div>
-    <div class="card-main">
+    <div class="card-main col-md-4">
       <div>
-        <h5>{{weather.name}}</h5>
-        <img src={{weather.countryImgPath}} alt="Country flag">
+        <h5>{{city.name}}</h5>
+        <img src="http://openweathermap.org/images/flags/{{city.sys.country.toLocaleLowerCase()}}.png" alt="Country flag">
       </div>
-      <p>Max: <span class="max">{{weather.temp_max | number:'1.0-1'}}</span></p>
-      <p>Min: <span class="min">{{weather.temp_min | number:'1.0-1'}}</span></p>
+      <p>Max: <span class="max">{{city.main.temp_max | number:'1.0-1'}}°C</span></p>
+      <p>Min: <span class="min">{{city.main.temp_min | number:'1.0-1'}}°C</span></p>
     </div>
-    <div class="card-weather">
-      <img src={{weather.weatherImgPath}} alt="Weather icon">
-      <p>{{weather.description}}</p>
+    <div class="card-weather col-md-4">
+      <img src="https://openweathermap.org/img/w/{{city.weather[0].icon}}.png" alt="Weather icon">
+      <p class="description">{{city.weather[0].description}}</p>
     </div>
   </div>
 </div>

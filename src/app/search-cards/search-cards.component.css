@@ -6,22 +6,29 @@
 }
 
 .card {
-  width: 620px;
-  height: 170px;
+  max-width: 620px;
+  max-height: 170px;
   border-radius: 4px;
-  margin: 16px auto;
+  margin: 16px;
   padding: 16px;
   border: 0;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   vertical-align: middle;
+  transition: box-shadow 0.5s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .card-temp {
   width: 200px;
   height: 138px;
+  margin: 0 16px 0 0;
   border-radius: 4px;
   background-color: #f0f0f0;
   display: flex;
@@ -34,37 +41,39 @@
   color: #3c3c3c;
   font-size: 48px;
   font-weight: bold;
-  text-align: center;
 }
 
 .card-main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 200px;
+  max-height: 138px;
 }
 
 .card-main div {
   margin: 0 0 16px 0;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  vertical-align: middle;
+  justify-content: start;
+  align-items: center;
 }
 
 .card-main h5 {
-  display: inline;
-  vertical-align: middle;
+  color: #39a3db;
+  margin: 0 8px 0 0;
+  font-size: 24px;
+  font-weight: bold;
+  align-self: left;
 }
 
 .card-main img {
   width: 16px;
   height: 11px;
-  display: inline;
-  vertical-align: middle;
 }
 
 .card-main p {
   color: #3c3c3c;
+  margin: 0;
 }
 
 .card-main .max {
@@ -81,6 +90,12 @@
   justify-content: center;
   font-size: 14px;
   font-style: italic;
+  width: 100px;
+  height: 138px;
+}
+
+.description {
+  text-align: center;
 }
 
 .card-weather img {

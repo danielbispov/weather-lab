@@ -1,12 +1,12 @@
-<header class="header">
-  <form class="form">
+<header class="header row">
+  <form class="form col-md-4">
     <div class="input-group search">
       <label for="search">WEATHER IN YOUR CITY</label>
       <div class="bar">
-        <input type="search" name="search" id="search" (input)="onKeyUp($event.target.value)" />
+        <input type="search" name="search" id="search" placeholder="Type in a city name" (input)="onKeyUp($event.target.value)" />
         <i class="icon-search ion-ios-search-strong"></i>
       </div>
     </div>
   </form>
 </header>
-<app-search-cards [weathers]="weathers"></app-search-cards>
+<app-search-cards [cities]="cities"></app-search-cards>

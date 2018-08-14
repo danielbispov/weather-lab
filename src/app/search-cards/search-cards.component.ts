@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Weather} from '../weather';
+import {City} from '../_models/city';
 
 @Component({
   selector: 'app-search-cards',
@@ -8,7 +8,7 @@ import {Weather} from '../weather';
 })
 export class SearchCardsComponent implements OnInit {
 
-  @Input() weathers: Weather[];
+  @Input() cities: City[];
 
   constructor() { }
 
