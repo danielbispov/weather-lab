@@ -1,0 +1,19 @@
+<div *ngIf="weathers" class="card-container">
+  <div class="card" *ngFor="let weather of weathers">
+    <div class="card-temp">
+      <div>{{weather.temp | number:'1.0-1'}}°</div>
+    </div>
+    <div class="card-main">
+      <div>
+        <h5>{{weather.name}}</h5>
+        <img src={{weather.countryImgPath}} alt="Country flag">
+      </div>
+      <p>Max: <span class="max">{{weather.temp_max | number:'1.0-1'}}</span></p>
+      <p>Min: <span class="min">{{weather.temp_min | number:'1.0-1'}}</span></p>
+    </div>
+    <div class="card-weather">
+      <img src={{weather.weatherImgPath}} alt="Weather icon">
+      <p>{{weather.description}}</p>
+    </div>
+  </div>
+</div>

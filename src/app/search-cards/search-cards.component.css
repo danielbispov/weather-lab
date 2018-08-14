@@ -1,0 +1,90 @@
+.card-container {
+  margin: -50px auto 24px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 620px;
+  height: 170px;
+  border-radius: 4px;
+  margin: 16px auto;
+  padding: 16px;
+  border: 0;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+.card-temp {
+  width: 200px;
+  height: 138px;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-temp div {
+  color: #3c3c3c;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-main div {
+  margin: 0 0 16px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.card-main h5 {
+  display: inline;
+  vertical-align: middle;
+}
+
+.card-main img {
+  width: 16px;
+  height: 11px;
+  display: inline;
+  vertical-align: middle;
+}
+
+.card-main p {
+  color: #3c3c3c;
+}
+
+.card-main .max {
+  color: #b30000;
+}
+
+.card-main .min {
+  color: #4a90e2;
+}
+
+.card-weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.card-weather img {
+  width: 50px;
+  height: 50px;
+  align-self: center;
+}
